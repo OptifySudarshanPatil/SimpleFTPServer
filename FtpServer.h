@@ -143,7 +143,8 @@
 //		#define ParameterIs( a ) ( parameter != NULL && ! strcmp_P( parameter, PSTR( a )))
 #elif(FTP_SERVER_NETWORK_TYPE == NETWORK_W5100 || FTP_SERVER_NETWORK_TYPE == NETWORK_ETHERNET_ENC)
 
-		#include <Ethernet.h>
+		// #include <Ethernet.h>
+		#include <../../custom-Ethernet/src/Ethernet.h>
 		#include <SPI.h>
 		#define FTP_CLIENT_NETWORK_CLASS EthernetClient
 		#define FTP_SERVER_NETWORK_SERVER_CLASS EthernetServer
